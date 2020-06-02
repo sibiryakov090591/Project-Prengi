@@ -1,0 +1,22 @@
+{
+  "name": "prengi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sibiryakov090591/Prengi"
+  },
+  "author": "Andrey Sibiryakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sibiryakov090591/Prengi"
+  },
+  "homepage": "https://github.com/sibiryakov090591/Prengi",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
