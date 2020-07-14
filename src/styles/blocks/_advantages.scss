@@ -1,0 +1,32 @@
+.advantages {
+    min-height: 1320px;
+    padding: 70px 0;
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    &__item {
+        position: relative;
+
+        img {
+            height: 100%;
+        }
+
+        &_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 23px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+
+}

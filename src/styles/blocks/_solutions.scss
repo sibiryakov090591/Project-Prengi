@@ -1,0 +1,146 @@
+.solutions {
+    min-height: 875px;
+    background: url("../img/decision/bg.jpg") center (center / cover) no-repeat;
+    padding: 70px 0;
+}
+
+////////////////// Slider \\\\\\\\\\\\\\\\\\\\
+
+.slick-slider {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.slick-list {
+    width: 950px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-arrow {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.slick-prev {
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.slick-next {
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.slick-dots {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+
+    .slick-active:before {
+        color: $main-color;
+    }
+
+    li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+
+        &:before {
+            content: "";
+            color: #ffffff;
+            display: flex;
+            height: 45px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        button {
+            position: absolute;
+            height: 60px;
+            color: #ffffff;
+            transition: 0.3s all;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 0;
+            cursor: pointer;
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        &:nth-child(1) {
+            &:before {
+                content: "Prengi Production";
+                width: 165px;
+            }
+            button {
+                width: 165px;
+            }
+        }
+        &:nth-child(2) {
+            &:before {
+                content: "Prengi FMC";
+                width: 115px;
+            }
+            button {
+                width: 115px;
+            }
+        }
+        &:nth-child(3) {
+            &:before {
+                content: "Prengi Mallz Retail";
+                width: 165px;
+            }
+            button {
+                width: 165px;
+            }
+        }
+        &:nth-child(4) {
+            &:before {
+                content: "Prengi Logistic";
+                width: 140px;
+            }
+            button {
+                width: 140px;
+            }
+        }
+        &:nth-child(5) {
+            &:before {
+                content: "Prengi IT";
+                width: 100px;
+            }
+            button {
+                width: 100px;
+            }
+        }
+        &:nth-child(6) {
+            &:before {
+                content: "Prengi HR";
+                width: 115px;
+                border: none;
+            }
+            button {
+                width: 115px;
+                border: none;
+            }
+        }
+    }
+}

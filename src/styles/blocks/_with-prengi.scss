@@ -1,0 +1,63 @@
+.with-prengi {
+    min-height: 890px;
+    padding-top: 75px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &_sub {
+            margin-top: 26px;
+        }
+    }
+
+    &__item {
+        padding: 2px 0 10px 0;
+        min-height: 250px;
+        width: 360px;
+        border: 1px solid #ececec;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: relative;
+            z-index: -5;
+        }
+
+        &_descr {
+            font-size: 18px;
+            font-weight: 300;
+            color: $text-color;
+            margin-top: -13px;
+
+            &_subs {
+                font-weight: 700;
+            }
+
+            &:before {
+                content: '?';
+                display: flex;
+                z-index: -1;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                background-color: #f0fbfe;
+                color: #ffffff;
+                position: absolute;
+                border-radius: 50%;
+                font-size: 90px;
+                font-weight: 900;
+                right: -26px;
+                transform: rotate(24deg);
+            }
+        }
+    }
+
+    &__arrow-down {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 30px 0;
+    }
+}

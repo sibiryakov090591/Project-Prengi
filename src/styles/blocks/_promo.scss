@@ -1,0 +1,122 @@
+.promo {
+    position: relative;
+    min-height: 700px;
+    padding-top: 40px;
+    background: url("../img/header/bg.jpg") center (center / cover) no-repeat;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 42px;
+        font-weight: 900;
+        color: #fff;
+        margin-top: 130px;
+    }
+
+    &__sub-title {
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 300;
+        color: #fff;
+
+        span {
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+
+    &__btn {
+        width: 240px;
+        height: 60px;
+        background: linear-gradient(to top, $main-color, #4ce2ff);
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: none;
+        margin-top: 40px;
+        outline: none;
+        cursor: pointer;
+        &:active {
+            background: $main-color;
+        }
+    }
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    transition: 0.5s all ease 0s;
+
+    a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 13px;
+        margin-left: 40px;
+        text-transform: uppercase;
+        transition: 0.3s all;
+        
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+
+    &.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    &.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    &.active span {
+        transform: scale(0);
+    }
+
+    span {
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: 0.5s all ease 0s;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.5s all ease 0s;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+}

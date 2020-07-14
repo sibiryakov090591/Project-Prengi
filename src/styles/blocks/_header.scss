@@ -1,8 +1,27 @@
-.country {
-    min-height: 85px;
-    display: flex;
+.header {
+    min-height: 40px;
 }
 
-.item {
-    width: 240px;
+.country {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    &__item {
+        margin: 0 8px;
+        &_descr {
+            margin-left: 40px;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+            color: $text-color;
+            span {
+                font-weight: 700;
+            }
+        }
+        img {
+            position: absolute;
+            width: 30px;
+        }
+    }
 }

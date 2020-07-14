@@ -10,52 +10,318 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
 
     <header class="header">
         <div class="container">
-
             <div class="country">
-                <div class="item">
+                <div class="country__item">
                     <img src="../img/icons/flags/ua.jpg" alt="ua">
-                    <span>Ukraine</span><br>
-                    tel. +38(063) 930 07 002<br>
-                    hi@vasolutions.com.ua
+                    <div class="country__item_descr">
+                        <span>Ukraine</span><br>
+                        tel. +38(063) 930 07 002<br>
+                        hi@vasolutions.com.ua
+                    </div>
                 </div>
-                <div class="item">
+                <div class="country__item">
                     <img src="../img/icons/flags/ger.jpg" alt="ger">
-                    <span>Germany</span><br>
-                    Trierer Strabe 35, 54329 Konz<br>
-                    tel. +352 661 88 03 05
+                    <div class="country__item_descr">
+                        <span>Germany</span><br>
+                        Trierer Strabe 35, 54329 Konz<br>
+                        tel. +352 661 88 03 05
+                    </div>
                 </div>
-                <div class="item">
+                <div class="country__item">
                     <img src="../img/icons/flags/est.jpg" alt="est">
-                    <span>Estonia</span><br>
-                    K. Karbery 16/27, 13812 Tallinn<br>
-                    tel. +352 661 88 03 05
+                    <div class="country__item_descr">
+                        <span>Estonia</span><br>
+                        K. Karbery 16/27, 13812 Tallinn<br>
+                        tel. +352 661 88 03 05
+                    </div>
                 </div>
-                <div class="item">
+                <div class="country__item">
                     <img src="../img/icons/flags/gb.jpg" alt="gb">
-                    <span>Great Britain</span><br>
-                    E20LP, Golden vc House, London<br>
-                    tel. +44 750 109 55 29
+                    <div class="country__item_descr">
+                        <span>Great Britain</span><br>
+                        E20LP, Golden vc House, London<br>
+                        tel. +44 750 109 55 29
+                    </div>
                 </div>
-                <div class="item">
+                <div class="country__item">
                     <img src="../img/icons/flags/lux.jpg" alt="lux">
-                    <span>Luxembourg</span><br>
-                    2,Rue d`Avalon, L-1159 Luxembourg<br>
-                    tel. +352 661 88 03 05
+                    <div class="country__item_descr">
+                        <span>Luxembourg</span><br>
+                        2,Rue d`Avalon, L-1159 Luxembourg<br>
+                        tel. +352 661 88 03 05
+                    </div>
                 </div>
             </div>
-
         </div>
     </header>
 
+    <section class="promo">
+        <div class="container">
+            <div class="promo__header">
+                <a href="#" class="logo"><img src="img/icons/logo/logo.png" alt="logo"></a>
+
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">главная</a></li>
+                        <li><a href="#">модули</a></li>
+                        <li><a href="#">отрасли</a></li>
+                        <li><a href="#">о нас</a></li>
+                        <li><a href="#">наши обязательства</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu">
+                    <span></span>
+                </div>
+            </div>
+
+            <h1 class="promo__title">
+                Управляй своим бизнесом <br>
+                через Smartphone
+            </h1>
+
+            <h2 class="promo__sub-title">
+                <span>PRENGI</span> - Платформа для прозрачного <br>
+                управления бизнесом
+            </h2>
+
+            <button class="promo__btn">Получить доступ</button>
+        </div>
+    </section>
+
+    <section class="with-prengi">
+        <div class="container">
+            <div class="with-prengi__wrapper">
+                <div class="with-prengi__item">
+                    <img src="img/with_prengi/item_1.jpg" alt="item_1">
+                    <div class="with-prengi__item_descr">
+                        Нет оперативности <br>
+                        в принятии решений?
+                    </div>
+                </div>
+                <div class="with-prengi__item">
+                    <img src="img/with_prengi/item_2.jpg" alt="item_2">
+                    <div class="with-prengi__item_descr">
+                        Нет учета и контроля <br>
+                        обслуживания?
+                    </div>
+                </div>
+                <div class="with-prengi__item">
+                    <img src="img/with_prengi/item_3.jpg" alt="item_3">
+                    <div class="with-prengi__item_descr">
+                        Сложно строить прогнозы и <br>
+                        анализировать данные?
+                    </div>
+                </div>
+            </div>
+
+            <div class="with-prengi__arrow-down">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="169px"
+                    height="72px">
+                    <path fill-rule="evenodd" fill="rgb(236, 236, 236)"
+                        d="M85.871,49.810 C85.647,49.939 85.394,49.964 85.159,49.913 C84.924,49.964 84.672,49.939 84.447,49.810 L1.292,1.864 C0.813,1.588 0.649,0.977 0.925,0.499 C1.201,0.022 1.813,-0.142 2.292,0.134 L85.159,47.913 L168.148,0.134 C168.627,-0.142 169.240,0.022 169.516,0.499 C169.793,0.977 169.629,1.588 169.150,1.864 L85.871,49.810 ZM2.292,22.109 L85.159,69.888 L168.148,22.109 C168.627,21.833 169.240,21.997 169.516,22.474 C169.793,22.952 169.629,23.563 169.150,23.839 L85.871,71.785 C85.647,71.914 85.394,71.939 85.159,71.888 C84.924,71.939 84.672,71.914 84.447,71.785 L1.292,23.839 C0.813,23.563 0.649,22.952 0.925,22.474 C1.201,21.997 1.813,21.833 2.292,22.109 Z" />
+                </svg>
+            </div>
+
+            <h2 class="title title_prengi">
+                С PRENGI
+            </h2>
+
+            <div class="with-prengi__wrapper with-prengi__wrapper_sub">
+                <div class="with-prengi__item">
+                    <img src="img/with_prengi/item_4.jpg" alt="item_4">
+                    <div class="with-prengi__item_descr with-prengi__item_descr_subs">
+                        Все затраты спланированы <br>
+                        и расписаны
+                    </div>
+                </div>
+                <div class="with-prengi__item">
+                    <img src="img/with_prengi/item_5.jpg" alt="item_5">
+                    <div class="with-prengi__item_descr with-prengi__item_descr_subs">
+                        Корректная аналитика данных <br>
+                        online
+                    </div>
+                </div>
+                <div class="with-prengi__item">
+                    <img src="img/with_prengi/item_6.jpg" alt="item_6">
+                    <div class="with-prengi__item_descr with-prengi__item_descr_subs">
+                        Простая интеграция с любым <br>
+                        Вашим ПО
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions">
+        <div class="container">
+            <div class="title title_white">
+                Prengi предоставляет экспертные решения <br>
+                для Вашей отрасли
+            </div>
+
+            <div class="solutions__tabs">
+                <div class="solutions__tab"><img src="img/decision/slider/slide-1.png" alt="slide1"></div>
+                <div class="solutions__tab"><img src="img/decision/slider/slide-2.png" alt="slide2"></div>
+                <div class="solutions__tab"><img src="img/decision/slider/slide-3.png" alt="slide3"></div>
+                <div class="solutions__tab"><img src="img/decision/slider/slide-4.png" alt="slide4"></div>
+                <div class="solutions__tab"><img src="img/decision/slider/slide-5.png" alt="slide5"></div>
+                <div class="solutions__tab"><img src="img/decision/slider/slide-6.png" alt="slide6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+
+            <h2 class="title">
+                Преимущества Prengi для <br>
+                Вашей отрасли
+            </h2>
+
+            <div class="advantages__items">
+                <div class="advantages__item">
+                    <img src="img/advantages/item_1.jpg" alt="item_1">
+                    <div class="advantages__item_text">Возможность внедрения и тестирования в реальном времени</div>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/advantages/item_2.jpg" alt="item_2">
+                    <div class="advantages__item_text">Система “Intellect”, учет уровня доступов</div>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/advantages/item_3.jpg" alt="item_3">
+                    <div class="advantages__item_text">Возможность использовать из любой точки мира с любого устройства
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/advantages/item_4.jpg" alt="item_4">
+                    <div class="advantages__item_text">Нет необходимости установки и стационарной работы программиста
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/advantages/item_2.jpg" alt="item_5">
+                    <div class="advantages__item_text">“Живые”
+                        бизнес-процессы</div>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/advantages/item_6.jpg" alt="item_6">
+                    <div class="advantages__item_text">Никаких предоплат, оплата
+                        после старта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="options">
+        <div class="container">
+
+            <h2 class="title title_white">
+                Варианты развертывания <br>
+                Ваших данных
+            </h2>
+
+            <div class="options__items">
+                <div class="options__item options__item-first">
+                    <div class="options__item_title">
+                        Облачное хранилище
+                    </div>
+                    <div class="options__item_descr">
+                        Это выделенное пользователю пространство на жестком диске сервера, находящегося в Интернете.
+                    </div>
+                </div>
+                <div class="options__item">
+                    <div class="options__item_title">
+                        Размещение на сервере
+                    </div>
+                    <div class="options__item_descr">
+                        Услуга аренды пространства в центре обработки данных (колокация серверов) предназначена для
+                        клиентов
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <img class="contact__icon" src="../img/contact/icon.jpg" alt="icon">
+
+            <h2 class="title">
+                Приступить очень просто! <br>
+                Нужно получить доступ и начать работу!
+            </h2>
+
+            <button class="promo__btn">связаться с нами</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__item_title">О компании</div>
+                    <img src="../img/icons/logo/logo_footer.png" alt="logo" class="footer__logo">
+                    <div class="footer__item_descr">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+                        Lorem Ipsum для распечатки образцов.
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item_title">Модули</div>
+                    <ul class="footer__item_links">
+                        <li class="footer__item_link"><a href="#!">Обслуживание</a></li>
+                        <li class="footer__item_link"><a href="#!">Паспорт объекта</a></li>
+                        <li class="footer__item_link"><a href="#!">Автоматизация бизнес процессов (BPM)</a></li>
+                        <li class="footer__item_link"><a href="#!">Проектное управление (РРМ)</a></li>
+                        <li class="footer__item_link"><a href="#!">Управление подрядчиками</a></li>
+                        <li class="footer__item_link"><a href="#!">Персональный дашборд</a></li>
+                        <li class="footer__item_link"><a href="#!">Управление задачами</a></li>
+                        <li class="footer__item_link"><a href="#!">Управление алгоритмами</a></li>
+                        <li class="footer__item_link"><a href="#!">Управление качеством</a></li>
+                        <li class="footer__item_link"><a href="#!">Склад</a></li>
+                        <li class="footer__item_link"><a href="#!">Service desk</a></li>
+                        <li class="footer__item_link"><a href="#!">Календарь</a></li>
+                        <li class="footer__item_link"><a href="#!">Prengi market</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item_title">Отрасли</div>
+                    <ul class="footer__item_links">
+                        <li class="footer__item_link"><a href="#!">Промышленность</a></li>
+                        <li class="footer__item_link"><a href="#!">Ритейл</a></li>
+                        <li class="footer__item_link"><a href="#!">Фасилити</a></li>
+                        <li class="footer__item_link"><a href="#!">Логистика</a></li>
+                        <li class="footer__item_link"><a href="#!">IT</a></li>
+                        <li class="footer__item_link"><a href="#!">HR</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item_title">О нас</div>
+                    <ul class="footer__item_links">
+                        <li class="footer__item_link"><a href="#!">История</a></li>
+                        <li class="footer__item_link"><a href="#!">Наши отношения</a></li>
+                        <li class="footer__item_link"><a href="#!">Команда</a></li>
+                        <li class="footer__item_link"><a href="#!">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__sub-item">
+                © Prengi Ink. 2008-2020 Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
 </body>
 
 </html>

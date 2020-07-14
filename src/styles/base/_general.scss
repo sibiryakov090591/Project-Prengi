@@ -1,25 +1,43 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
     margin: 0;
     padding: 0;
 }
 
-.country {
-    min-height: 85px;
-    display: flex;
-}
-
-.item {
-    width: 240px;
+a {
+    outline: none;
+    text-decoration: none;
 }
 
 .container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title {
+    color: $text-color;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+
+    &_white {
+        color: #ffffff;
+    }
+
+    &_prengi {
+        font-size: 48px;
+        font-weight: 700;
+    }
 }

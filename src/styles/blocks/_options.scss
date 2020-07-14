@@ -1,0 +1,38 @@
+.options {
+    min-height: 575px;
+    background: url('../img/options/bg.jpg') center (center / cover) no-repeat;
+    padding-top: 70px;
+
+    &__items {
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        position: relative;
+
+    }
+    &__item {
+        max-width: 500px;
+        &-first {
+            text-align: right;
+            margin-right: 180px;
+        }
+        &-second {
+            text-align: right;
+            margin-left: 180px;
+        }
+    }
+
+    &__item_title {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    &__item_descr {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 15px;
+        line-height: 24px;
+    }
+}
