@@ -11,6 +11,12 @@
 
     &__item {
         position: relative;
+        transition: .3s ease all;
+
+        &:hover {
+            transform: translate(-5px, -15px) rotate(1deg);
+            box-shadow: 5px 15px 20px rgba(0,0,0,0.5);
+        }
 
         img {
             height: 100%;
