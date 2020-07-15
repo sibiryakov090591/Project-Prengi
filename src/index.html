@@ -22,7 +22,7 @@
                     <img src="img/icons/flags/ua.jpg" alt="ua">
                     <div class="country__item_descr">
                         <span>Ukraine</span><br>
-                        tel. +38(063) 930 07 002<br>
+                        <a href="tel:+3806393007002">tel. +38(063) 930 07 002</a><br>
                         hi@vasolutions.com.ua
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="country__item_descr">
                         <span>Germany</span><br>
                         Trierer Strabe 35, 54329 Konz<br>
-                        tel. +352 661 88 03 05
+                        <a href="tel:+352661880305">tel. +352 661 88 03 05</a>
                     </div>
                 </div>
                 <div class="country__item">
@@ -39,7 +39,7 @@
                     <div class="country__item_descr">
                         <span>Estonia</span><br>
                         K. Karbery 16/27, 13812 Tallinn<br>
-                        tel. +352 661 88 03 05
+                        <a href="tel:+352661880305">tel. +352 661 88 03 05</a>
                     </div>
                 </div>
                 <div class="country__item">
@@ -47,7 +47,7 @@
                     <div class="country__item_descr">
                         <span>Great Britain</span><br>
                         E20LP, Golden vc House, London<br>
-                        tel. +44 750 109 55 29
+                        <a href="tel:+447501095529">tel. +44 750 109 55 29</a>
                     </div>
                 </div>
                 <div class="country__item">
@@ -55,7 +55,7 @@
                     <div class="country__item_descr">
                         <span>Luxembourg</span><br>
                         2,Rue d`Avalon, L-1159 Luxembourg<br>
-                        tel. +352 661 88 03 05
+                        <a href="tel:+352661880305">tel. +352 661 88 03 05</a>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 управления бизнесом
             </h2>
 
-            <button class="promo__btn">Получить доступ</button>
+            <button data-modal="consultation" class="btn">Получить доступ</button>
         </div>
     </section>
 
@@ -258,7 +258,7 @@
                 Нужно получить доступ и начать работу!
             </h2>
 
-            <button class="promo__btn">связаться с нами</button>
+            <button data-modal="consultation" class="btn">связаться с нами</button>
         </div>
     </section>
 
@@ -318,6 +318,21 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+
+            <form class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="btn">заказать консультацию</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
